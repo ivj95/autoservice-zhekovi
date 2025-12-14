@@ -1,0 +1,104 @@
+:root {
+
+    --main-accent: #0d6efd; 
+    --hover-accent: #0a58ca;
+    --glass-bg: rgba(33, 37, 41, 0.85);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    min-height: 100vh;
+}
+
+main, section, .container {
+    background-color: transparent !important;
+}
+
+.text-warning {
+    color: var(--main-accent) !important;
+}
+
+.bg-warning {
+    background-color: var(--main-accent) !important;
+}
+
+.border-warning {
+    border-color: var(--main-accent) !important;
+}
+
+.btn-warning {
+    background-color: var(--main-accent);
+    border-color: var(--main-accent);
+    color: #fff;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-warning:hover {
+    background-color: var(--hover-accent);
+    border-color: var(--hover-accent);
+    transform: translateY(-2px);
+    color: #fff;
+}
+
+.card {
+    background-color: var(--glass-bg); 
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    backdrop-filter: blur(5px);
+}
+
+.card-header, .card-footer {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    border-color: rgba(255, 255, 255, 0.1);
+    color: white !important;
+}
+
+.text-muted {
+    color: #adb5bd !important;
+}
+
+.text-dark {
+    color: white !important;
+}
+
+.form-control, .input-group-text {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.form-control:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border-color: var(--main-accent);
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--main-accent) !important;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+    margin-top: auto;
+}
+
+header.bg-secondary {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+}
+.hover-zoom {
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+.hover-zoom:hover {
+    transform: scale(1.1);
+}
