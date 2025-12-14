@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="bg">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моят Профил - Автосервиз "ЖЕКОВИ"</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand text-warning fw-bold" href="index.html">
+    <i class="fas fa-wrench me-2"></i> Автосервиз "ЖЕКОВИ"
+</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Начало</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Услуги</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacts.html">Контакти</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
+                            <i class="fas fa-user"></i> Профил
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="login.html">Вход</a></li>
+                            <li><a class="dropdown-item active" href="profile.html">Настройки</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <div class="row">
+
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body text-center">
+
+                        <img src="img/human.svg" alt="Avatar" class="rounded-circle img-fluid border border-3 border-warning mb-3" width="150" style="height: 150px; object-fit: cover;">
+                        <h4 class="mb-1">Александър Димитров</h4>
+                        <p class="text-muted fw-bold text-warning">VIP Клиент</p>
+
+                        <div class="mb-3 text-start">
+                            <label for="avatarUpload" class="form-label small">Смени снимка</label>
+                            <input class="form-control form-control-sm" type="file" id="avatarUpload">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <div class="card shadow-sm border-0">
+                    <div class="card-header bg-white border-bottom-0">
+                        <h3 class="mt-2 text-dark"><i class="fas fa-cogs text-warning"></i> Настройки на профила</h3>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <h5 class="text-muted mb-3 border-bottom pb-2">Лични данни</h5>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">Име</label>
+                                    <input type="text" class="form-control" value="Александър" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Фамилия</label>
+                                    <input type="text" class="form-control" value="Димитров" required>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Email адрес</label>
+                                <input type="email" class="form-control" value="alex.dimitrov@gmail.com">
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Телефон за връзка</label>
+                                <input type="tel" class="form-control" value="+359 888 123 456">
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Адрес</label>
+                                <input type="text" class="form-control" value="гр. Варна, ул. Роза 15">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Кратко описание (Bio)</label>
+                                <textarea class="form-control"
+                                    rows="3">Собственик на Toyota Avensis. Редовен клиент на сервиза от 3 години. Интересувам се от абонаментна поддръжка и сезонна смяна на гуми.</textarea>
+                            </div>
+
+                            <h5 class="text-muted mb-3 mt-4 border-bottom pb-2">Социални мрежи</h5>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text bg-primary text-white"><i
+                                        class="fab fa-facebook-f"></i></span>
+                                <input type="text" class="form-control" value="facebook.com/alex.d">
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text bg-danger text-white"><i
+                                        class="fab fa-instagram"></i></span>
+                                <input type="text" class="form-control" value="@alex_cars">
+                            </div>
+
+                            <h5 class="text-muted mb-3 mt-4 border-bottom pb-2">Сигурност</h5>
+                            <div class="mb-3">
+                                <label class="form-label">Нова парола</label>
+                                <input type="password" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Потвърди нова парола</label>
+                                <input type="password" class="form-control">
+                            </div>
+
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-4">
+                                <button type="button" class="btn btn-secondary me-md-2">Отказ</button>
+                                <button type="submit" class="btn btn-warning text-dark fw-bold">Запази
+                                    промените</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-dark text-white text-center p-4 mt-5">
+        <div class="container">
+            <p>&copy; 2025 Автосервиз "ЖЕКОВИ". Всички права запазени.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

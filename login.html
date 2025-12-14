@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="bg">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход - Автосервиз "ЖЕКОВИ"</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-light d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand text-warning fw-bold" href="index.html">
+    <i class="fas fa-wrench me-2"></i> Автосервиз "ЖЕКОВИ"
+</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Начало</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Услуги</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacts.html">Контакти</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"><i
+                                class="fas fa-user"></i> Профил</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item active" href="login.html">Вход</a></li>
+                            <li><a class="dropdown-item" href="profile.html">Настройки</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container flex-grow-1 d-flex align-items-center justify-content-center py-5">
+        <div class="card shadow-lg border-0" style="max-width: 400px; width: 100%;">
+            <div class="card-body p-5">
+                <div class="text-center mb-4">
+                    <i class="fas fa-user-circle fa-4x text-secondary mb-3"></i>
+                    <h3 class="fw-bold">Вход в системата</h3>
+                    <p class="text-muted">Моля, въведете вашите данни</p>
+                </div>
+
+                <form action="profile.html">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email адрес</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-white"><i class="fas fa-envelope text-muted"></i></span>
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label for="password" class="form-label">Парола</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-white"><i class="fas fa-lock text-muted"></i></span>
+                            <input type="password" class="form-control" id="password" placeholder="******" required>
+                        </div>
+                    </div>
+
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-warning btn-lg fw-bold text-dark">Влез</button>
+                    </div>
+
+                    <div class="text-center mt-3">
+                        <a href="#" class="text-decoration-none text-muted small">Забравена парола?</a>
+                    </div>
+                </form>
+            </div>
+            <div class="card-footer bg-white text-center py-3 border-0">
+                <small>Нямате акаунт? <a href="#" class="text-warning fw-bold">Регистрация</a></small>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center p-4 mt-auto">
+        <div class="container">
+            <p>&copy; 2025 Автосервиз "ЖЕКОВИ".</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
